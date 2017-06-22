@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+	<title>Karawang Kuliner</title>
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/full-slider.css">
+	<link href="https://fonts.googleapis.com/css?family=Dancing+Script|Sacramento" rel="stylesheet"> 
+    <link rel="stylesheet" type="text/css" href="css/ayoshare.min.css">    
+	<style>
+		body{
+		padding-top:20px;
+		}
+		.img-produk{
+		max-height:280px;	
+		max-width:280px;	
+		}
+		.img-logo{
+		max-height:320px;	
+		max-width:350px;	
+		}
+		.thumbnail img{
+			height:300px;
+			width:100%;
+		}
+	</style>	
+	</head>
+    <body>
+				<!-- Top Navigation -->		
+			<nav class="navbar navbar-default navbar-fixed-top">
+			  <div class="container-fluid">
+				<!-- Brand and toggle get grouped for better mobile display -->
+				<div class="navbar-header">
+				  <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				  </button>
+				  <a class="navbar-brand" href="index.php" style="font-family: 'Sacramento', cursive; font-size:25px;">Karawang Kuliner</a>
+				</div>
+
+				<!-- Collect the nav links, forms, and other content for toggling -->
+				<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+				  <form class="navbar-form navbar-left" name="form-search" id="form-search" action="query/result.php" method="post">
+					<div class="form-group form-group-sm">
+						<div class="input-group">
+							<input type="text" class="form-control" placeholder="Search" name="search">
+								<span class="input-group-btn">
+									<button type="submit" class="btn btn-default btn-sm" name="submit-search"><i class="fa fa-search"></i></button>
+								</span>
+						</div>	
+					</div>
+				  </form>
+				  <ul class="nav navbar-nav">
+					<li><a href="#about">Trend</a></li>
+					<li><a href="#contact">24 Jam</a></li>
+					<li class="dropdown">
+					  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><i class="fa fa-map-marker"></i> Location</a>
+					  <ul class="dropdown-menu" id="list-kecamatan">
+					  </ul>
+					</li>
+				  </ul>	  
+				</div><!-- /.navbar-collapse -->
+			  </div><!-- /.container-fluid -->
+			</nav>
+				<!-- /Top Navigation -->		
+			
+			<!-- SLIDER -->
+			<!-- Full Page Image Background Carousel Header -->
+			<header id="myCarousel" class="carousel slide">
+				<!-- Indicators -->
+				<ol class="carousel-indicators">
+					<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+					<li data-target="#myCarousel" data-slide-to="1"></li>
+					<li data-target="#myCarousel" data-slide-to="2"></li>
+				</ol>
+
+				<!-- Wrapper for Slides -->
+				<div class="carousel-inner">
+					<div class="item active">
+						<!-- Set the first background image using inline CSS below. -->
+						<div class="fill" style="background-image:url('img_slider/1.jpg');"></div>
+						<div class="carousel-caption">
+							<h2>Seafood</h2>
+						</div>
+					</div>
+					<div class="item">
+						<!-- Set the second background image using inline CSS below. -->
+						<div class="fill" style="background-image:url('img_slider/2.jpg');"></div>
+						<div class="carousel-caption">
+							<h2>Sushi</h2>
+						</div>
+					</div>
+					<div class="item">
+						<!-- Set the third background image using inline CSS below. -->
+						<div class="fill" style="background-image:url('img_slider/3.jpg');"></div>
+						<div class="carousel-caption">
+							<h2>Barbecue</h2>
+						</div>
+					</div>
+				</div>
+
+				<!-- Controls -->
+				<a class="left carousel-control" href="#myCarousel" data-slide="prev">
+					<span class="icon-prev"></span>
+				</a>
+				<a class="right carousel-control" href="#myCarousel" data-slide="next">
+					<span class="icon-next"></span>
+				</a>
+
+			</header>			
+			
+			<!-- /SLIDER -->
+
+			<!-- KONTEN -->
+			<div class="container-fluid">
+				<div class="row" style="padding-top:20px;">
+					<div id="ListDefault">
+					</div>
+				</div>
+			</div>
+			<!-- /KONTEN -->
+        <script type="text/javascript" src="cordova.js"></script>
+		<script type="text/javascript" src="js/jquery-3.2.0.min.js"></script>
+		<script type="text/javascript" src="js/bootstrap.min.js"></script>
+		<script type="text/javascript">
+		        app.initialize();
+		</script>	
+		<script src="js/loaddata.js"></script>    
+	</body>
+</html>
